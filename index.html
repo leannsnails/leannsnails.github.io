@@ -22,7 +22,11 @@
 giftup("conversion", function (payload) { 
        heap.track('Conversion', {
            "orderId": payload.orderId,
-           "revenue": payload.revenue
+           "revenue": payload.revenue,
+           "currency": payload.currency,
+           "giftCardItem": payload.giftCards[0].item,
+           "giftCardSku": payload.giftCards[0].code,
+           "giftCardId": payload.giftCards[0].id
        })
 });
 
