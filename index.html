@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" 
-      type="image/png" 
-      href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <title>Leann's Nails</title>
 
-    <script type="text/javascript">   
-        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};   
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) };
         heap.load("806218626"); 
-        </script> 
+    </script>
 
-        <style>
-            #message{
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                /* margin-left:auto;
+    <style>
+        #message {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            /* margin-left:auto;
                 margin-right:auto;
                 max-width: 450px; */
-                margin-bottom: 20px;
-            }
+            margin-bottom: 20px;
+        }
 
-            #message span{
-                display:block;
-                font-size:smaller;
-            }
-        </style>
+        #message span {
+            display: block;
+            font-size: smaller;
+        }
+    </style>
 </head>
+
 <body>
     <div id="message">
         <h3>Message from Leann:</h3>
@@ -37,19 +37,30 @@
         <span>We appreciate your love and support ❤️❤️❤️</span>
     </div>
     <div data-site-id="e4f6fa73-28d5-4c42-a8c7-61f6887b7d33" data-platform="Other" class="gift-up-target"></div>
-<script type="text/javascript"> (function (g, i, f, t, u, p, s) { g[u] = g[u] || function() { (g[u].q = g[u].q || []).push(arguments) }; p = i.createElement(f); p.async = 1; p.src = t; s = i.getElementsByTagName(f)[0]; s.parentNode.insertBefore(p, s); })(window, document, "script", "https://cdn.giftup.app/dist/gift-up.js", "giftup"); 
+    <script type="text/javascript"> (function (g, i, f, t, u, p, s) { g[u] = g[u] || function () { (g[u].q = g[u].q || []).push(arguments) }; p = i.createElement(f); p.async = 1; p.src = t; s = i.getElementsByTagName(f)[0]; s.parentNode.insertBefore(p, s); })(window, document, "script", "https://cdn.giftup.app/dist/gift-up.js", "giftup");
 
-// Track conversions:
-giftup("conversion", function (payload) { 
-       heap.track('Conversion', {
-           "orderId": payload.orderId,
-           "revenue": payload.revenue,
-           "currency": payload.currency,
-           "giftCardItem": payload.giftCards[0].item,
-           "giftCardId": payload.giftCards[0].id
-       })
-});
+        giftup("conversion", function (payload) {
+            // heap.track('Conversion', {
+            //     "orderId": payload.orderId,
+            //     "revenue": payload.revenue,
+            //     "currency": payload.currency,
+            //     "giftCardItem": payload.giftCards[0].item,
+            //     "giftCardId": payload.giftCards[0].id
+            // })
 
-</script>
+            for (giftcard of payload.giftCards) {
+                heap.track('Conversion', {
+                    "orderId": payload.orderId,
+                    "revenue": payload.revenue,
+                    "currency": payload.currency,
+                    "giftCardItem": giftcard.item,
+                    "giftCardId": giftcard.id,
+                    "giftCardPrice": giftcard.price
+                })
+            }
+        });
+
+    </script>
 </body>
+
 </html>
