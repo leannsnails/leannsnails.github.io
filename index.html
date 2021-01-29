@@ -155,20 +155,20 @@ mixpanel.init("543840db4ebb2dd9a6fe62b7d3a8340f", {batch_requests: true})</scrip
             <span class="pill-text">About</span>
         </div> -->
 
-            <a href="https://leanns.salon/services/" id="services">
+            <a onclick= "mixpanel.track('Click Services');" href="https://leanns.salon/services/" id="services">
                 <div class="pill">
                     <span class="pill-text">Services</span>
                 </div>
             </a>
 
-            <a href="https://leanns.salon/gift/" id="giftcards">
+            <a onclick= "mixpanel.track('Click Giftcards');" href="https://leanns.salon/gift/" id="giftcards">
                 <div class="pill">
                     <span class="pill-text">Gift Cards</span>
                 </div>
             </a>
 
 
-            <a href="https://www.yelp.com/biz/leanns-nails-alameda" id="reviews" target="_blank">
+            <a onclick= "mixpanel.track('Click Yelp');"  href="https://www.yelp.com/biz/leanns-nails-alameda" id="reviews" target="_blank">
                 <div class="pill">
                     <span class="pill-text">Reviews</span>
                 </div>
