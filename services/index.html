@@ -9,14 +9,69 @@
     <link rel="icon" type="image/png" href="icon.png">
 
 
+    <!-- heap start -->
     <script type="text/javascript">
         window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a); for (var n = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++)heap[p[o]] = n(p[o]) };
         heap.load("806218626");
-        heap.clearEventProperties();
-        heap.addEventProperties(
-            { "variant": "a" }
-        );
     </script>
+    <!-- heap stop -->
+
+
+    <!-- mixpanel start -->
+    <script>(function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("543840db4ebb2dd9a6fe62b7d3a8340f", { batch_requests: true })</script>
+    <!-- mixpanel stop -->
+
+    <!-- pendo start -->
+    <script>
+            (function (apiKey) {
+                (function (p, e, n, d, o) {
+                    var v, w, x, y, z; o = p[d] = p[d] || {}; o._q = o._q || [];
+                    v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track']; for (w = 0, x = v.length; w < x; ++w)(function (m) {
+                        o[m] = o[m] || function () { o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0))); };
+                    })(v[w]);
+                    y = e.createElement(n); y.async = !0; y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+                    z = e.getElementsByTagName(n)[0]; z.parentNode.insertBefore(y, z);
+                })(window, document, 'script', 'pendo');
+
+                // Call this whenever information about your visitors becomes available
+                // Please use Strings, Numbers, or Bools for value types.
+                pendo.initialize({
+                    visitor: {
+                        // id: 'VISITOR-UNIQUE-ID'   // Required if user is logged in
+                        // email:        // Recommended if using Pendo Feedback, or NPS Email
+                        // full_name:    // Recommended if using Pendo Feedback
+                        // role:         // Optional
+
+                        // You can add any additional visitor level key-values here,
+                        // as long as it's not one of the above reserved names.
+                    },
+
+                    account: {
+                        // id: 'ACCOUNT-UNIQUE-ID' // Highly recommended
+                        // name:         // Optional
+                        // is_paying:    // Recommended if using Pendo Feedback
+                        // monthly_value:// Recommended if using Pendo Feedback
+                        // planLevel:    // Optional
+                        // planPrice:    // Optional
+                        // creationDate: // Optional
+
+                        // You can add any additional account level key-values here,
+                        // as long as it's not one of the above reserved names.
+                    }
+                });
+            })('8220a4c4-675b-4f3e-6242-938693eb3c21');
+    </script>
+    <!-- pendo stop -->
+
 
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 
