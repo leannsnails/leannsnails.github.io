@@ -236,6 +236,7 @@
         pocket.track = (name, props) => {
             heap.track(name, props);
             mixpanel.track(name, props);
+            pendo.track(name, props);
         }
 
         var servicesLink = document.querySelector('#services');
