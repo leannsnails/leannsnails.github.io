@@ -79,6 +79,22 @@ snowplow("trackPageView");
             })(document, window.freshpaint || []);
         freshpaint.init("c7dbc076-3e3a-479d-a1f2-6e806ff85969");
         freshpaint.page();
+        
+        
+        snowplow('trackSelfDescribingEvent', {
+event: {
+schema: 'iglu:com.acme_company/viewed_product/jsonschema/1-0-0',
+data: {
+productId: 'ASO01043',
+category: 'Dresses',
+brand: 'ACME',
+returning: true,
+price: 49.95,
+sizes: ['xs', 's', 'l', 'xl', 'xxl'],
+availableSince: new Date(2013,3,7)
+}
+}
+});
     </script>
 
 
