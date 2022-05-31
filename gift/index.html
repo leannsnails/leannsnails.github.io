@@ -242,6 +242,7 @@ snowplow("trackPageView");
             heap.track(name, props);
             mixpanel.track(name, props);
             pendo.track(name, props);
+            jitsu('track', name)
         }
 
         var servicesLink = document.querySelector('#services');
