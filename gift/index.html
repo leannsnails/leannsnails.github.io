@@ -182,14 +182,14 @@ snowplow("trackPageView");
         <script type="text/javascript"> (function (g, i, f, t, u, p, s) { g[u] = g[u] || function () { (g[u].q = g[u].q || []).push(arguments) }; p = i.createElement(f); p.async = 1; p.src = t; s = i.getElementsByTagName(f)[0]; s.parentNode.insertBefore(p, s); })(window, document, "script", "https://cdn.giftup.app/dist/gift-up.js", "giftup");
 
             giftup("conversion", function (payload) {
-                pocket.track('Order Made', {
+                tracker.track('Order Made', {
                     "orderId": payload.orderId,
                     "revenue": payload.revenue,
                     "currency": payload.currency,
                 })
 
                 for (giftcard of payload.giftCards) {
-                    pocket.track('Gift Card Purchase', {
+                    tracker.track('Gift Card Purchase', {
                         "orderId": payload.orderId,
                         "currency": payload.currency,
                         "giftCardItem": giftcard.item,
@@ -237,8 +237,8 @@ snowplow("trackPageView");
     </div>
 
     <script>
-        const pocket = {};
-        pocket.track = (name, props) => {
+        const tracker = {};
+        tracker.track = (name, props) => {
             heap.track(name, props);
             mixpanel.track(name, props);
             pendo.track(name, props);
@@ -250,15 +250,15 @@ snowplow("trackPageView");
         var yelpLink = document.querySelector('#reviews');
 
         servicesLink.addEventListener('click', () => {
-            pocket.track('Click Services');
+            tracker.track('Click Services');
         });
 
         giftCardLink.addEventListener('click', () => {
-            pocket.track('Click Gift Cards');
+            tracker.track('Click Gift Cards');
         });
 
         yelpLink.addEventListener('click', () => {
-            pocket.track('Click Yelp');
+            tracker.track('Click Yelp');
         });
     </script>
 
