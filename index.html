@@ -6,50 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leann's Nails | Alameda</title>
 
-	<script type="text/javascript">
-!function(){var e=window.htevents=window.htevents||[];if(!e.initialize)if(e.invoked)window.console&&console.error&&console.error("Hightouch snippet included twice.");else{e.invoked=!0,e.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"],e.factory=function(t){return function(){var n=Array.prototype.slice.call(arguments);return n.unshift(t),e.push(n),e}};for(var t=0;t<e.methods.length;t++){var n=e.methods[t];e[n]=e.factory(n)}e.load=function(t,n){var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src="https://cdn.hightouch-events.com/browser/release/v1-latest/events.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(o,r),e._loadOptions=n,e._writeKey=t},e.SNIPPET_VERSION="0.0.1",
-e.load('bbcbe63ef5516de5ddb3705304e3981e77bc3cbcdcabfe09a07df1586ecd649f',{apiHost:'us-east-1.hightouch-events.com'}),
-e.page()}}();
-</script>
-	
-	<script src="https://t.jitsu.com/s/lib.js"
-        data-key="js.brfk827t9szkox7ozweqmf.3gt4ys6z9zitgnkr1sqxip"
-        data-init-only="false"
-        defer></script>
-<script>window.jitsu = window.jitsu || (function(){(window.jitsuQ = window.jitsuQ || []).push(arguments);})</script>
-    
+    <script type="text/javascript">
+        !function () {
+            var e = window.htevents = window.htevents || []; if (!e.initialize) if (e.invoked) window.console && console.error && console.error("Hightouch snippet included twice."); else {
+                e.invoked = !0, e.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"], e.factory = function (t) { return function () { var n = Array.prototype.slice.call(arguments); return n.unshift(t), e.push(n), e } }; for (var t = 0; t < e.methods.length; t++) { var n = e.methods[t]; e[n] = e.factory(n) } e.load = function (t, n) { var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = "https://cdn.hightouch-events.com/browser/release/v1-latest/events.min.js"; var r = document.getElementsByTagName("script")[0]; r.parentNode.insertBefore(o, r), e._loadOptions = n, e._writeKey = t }, e.SNIPPET_VERSION = "0.0.1",
+                    e.load('bbcbe63ef5516de5ddb3705304e3981e77bc3cbcdcabfe09a07df1586ecd649f', { apiHost: 'us-east-1.hightouch-events.com' }),
+                    e.page()
+            }
+        }();
+    </script>
+
+    <script src="https://t.jitsu.com/s/lib.js" data-key="js.brfk827t9szkox7ozweqmf.3gt4ys6z9zitgnkr1sqxip"
+        data-init-only="false" defer></script>
+    <script>window.jitsu = window.jitsu || (function () { (window.jitsuQ = window.jitsuQ || []).push(arguments); })</script>
+
     <script type="text/javascript" async=1>
 
-;(function(p,l,o,w,i,n,g){
-  if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
-  p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
-  };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
-  n.src=w;g.parentNode.insertBefore(n,g)}
-}(
-  window,
-  document,
-  "script",
-  "https://7922d19a-565e-4e3d-8f3d-0416b3f1aff0.app.try-snowplow.com/v3/try.js",
-  "snowplow")
-);
+            ; (function (p, l, o, w, i, n, g) {
+                if (!p[i]) {
+                    p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+                    p.GlobalSnowplowNamespace.push(i); p[i] = function () {
+                        (p[i].q = p[i].q || []).push(arguments)
+                    }; p[i].q = p[i].q || []; n = l.createElement(o); g = l.getElementsByTagName(o)[0]; n.async = 1;
+                    n.src = w; g.parentNode.insertBefore(n, g)
+                }
+            }(
+                window,
+                document,
+                "script",
+                "https://7922d19a-565e-4e3d-8f3d-0416b3f1aff0.app.try-snowplow.com/v3/try.js",
+                "snowplow")
+            );
 
 
-snowplow("newTracker", "try", "https://7922d19a-565e-4e3d-8f3d-0416b3f1aff0.app.try-snowplow.com", {
-  appId: "try-snowplow", // you can specify your own app name here
-  platform: "web",
-  
-  contexts: {
-    webPage: true, // this sets a unique id for each page view
-    performanceTiming: true // this captures performance metrics like load times
-  }
-});
+        snowplow("newTracker", "try", "https://7922d19a-565e-4e3d-8f3d-0416b3f1aff0.app.try-snowplow.com", {
+            appId: "try-snowplow", // you can specify your own app name here
+            platform: "web",
 
-// send first heartbeat after 10 seconds, and every 10 seconds thereafter
-snowplow("enableActivityTracking", { minimumVisitLength: 10, heartbeatDelay: 10 });
-snowplow("enableLinkClickTracking"); 
-snowplow("trackPageView"); 
+            contexts: {
+                webPage: true, // this sets a unique id for each page view
+                performanceTiming: true // this captures performance metrics like load times
+            }
+        });
 
-</script>
+        // send first heartbeat after 10 seconds, and every 10 seconds thereafter
+        snowplow("enableActivityTracking", { minimumVisitLength: 10, heartbeatDelay: 10 });
+        snowplow("enableLinkClickTracking");
+        snowplow("trackPageView");
+
+    </script>
 
     <link rel="icon" type="image/png" href="icon.png">
 
@@ -91,60 +96,60 @@ snowplow("trackPageView");
             })(document, window.freshpaint || []);
         freshpaint.init("c7dbc076-3e3a-479d-a1f2-6e806ff85969");
         freshpaint.page();
-        
-        
+
+
         snowplow('trackSelfDescribingEvent', {
-event: {
-schema: 'iglu:com.acme_company/viewed_product/jsonschema/1-0-0',
-data: {
-productId: 'ASO01043',
-category: 'Dresses',
-brand: 'ACME',
-returning: true,
-price: 49.95,
-sizes: ['xs', 's', 'l', 'xl', 'xxl'],
-availableSince: new Date(2013,3,7)
-}
-}
-});
-        
-        
-        snowplow('trackStructEvent', {
-category: 'Mixes',
-action: 'Play',
-label: 'MrC/fabric-0503-mix',
-property: '',
-value: 0.0
-});
-        
-                snowplow('trackStructEvent', {
-category: 'Mixes',
-action: 'Play',
-label: 'json',
-property: {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
+            event: {
+                schema: 'iglu:com.acme_company/viewed_product/jsonschema/1-0-0',
+                data: {
+                    productId: 'ASO01043',
+                    category: 'Dresses',
+                    brand: 'ACME',
+                    returning: true,
+                    price: 49.95,
+                    sizes: ['xs', 's', 'l', 'xl', 'xxl'],
+                    availableSince: new Date(2013, 3, 7)
                 }
             }
-        }
-    }
-},
-value: 0.0
-});
+        });
+
+
+        snowplow('trackStructEvent', {
+            category: 'Mixes',
+            action: 'Play',
+            label: 'MrC/fabric-0503-mix',
+            property: '',
+            value: 0.0
+        });
+
+        snowplow('trackStructEvent', {
+            category: 'Mixes',
+            action: 'Play',
+            label: 'json',
+            property: {
+                "glossary": {
+                    "title": "example glossary",
+                    "GlossDiv": {
+                        "title": "S",
+                        "GlossList": {
+                            "GlossEntry": {
+                                "ID": "SGML",
+                                "SortAs": "SGML",
+                                "GlossTerm": "Standard Generalized Markup Language",
+                                "Acronym": "SGML",
+                                "Abbrev": "ISO 8879:1986",
+                                "GlossDef": {
+                                    "para": "A meta-markup language, used to create markup languages such as DocBook.",
+                                    "GlossSeeAlso": ["GML", "XML"]
+                                },
+                                "GlossSee": "markup"
+                            }
+                        }
+                    }
+                }
+            },
+            value: 0.0
+        });
     </script>
 
 
@@ -154,183 +159,247 @@ value: 0.0
 
 
     <style>
-        body {
-            background-color: #FFDFDF;
-            font-family: 'Sen', sans-serif;
+        :root {
+            color-scheme: light;
+            --bg: #fff3f3;
+            --bg-accent: #ffe1e1;
+            --text: #3e3f55;
+            --muted: #6d6f86;
+            --card: #ffffff;
+            --accent: #d87589;
+            --border: rgba(62, 63, 85, 0.12);
+            --shadow: 0 18px 40px rgba(62, 63, 85, 0.12);
+            --radius: 18px;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(circle at top, var(--bg-accent), var(--bg) 45%);
+            color: var(--text);
+            font-family: 'Sen', sans-serif;
+            line-height: 1.5;
+        }
 
         a {
             text-decoration: none;
-            color: #4F506A;
-
+            color: inherit;
         }
 
-        .subtext {
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: min(1080px, 92vw);
+            margin: 0 auto;
+            padding: 32px 0 72px;
+        }
+
+        .hero {
+            display: grid;
+            gap: 24px;
+            padding: 48px 0 24px;
             text-align: center;
-            font-weight: 400;
-            color: #4F506A;
-            margin-bottom: 0;
-            margin-top: 3px;
-
         }
 
-        #name {
-            color: #4F506A;
-            font-size: 6vw;
-            text-align: center;
-            font-weight: 400;
-            margin-bottom: .5vw;
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin: 0;
         }
 
-        #main {
-            margin-top: 10vh;
-            height: 76vh;
-            overflow: scroll;
+        .hero-title {
+            font-size: clamp(2.75rem, 6vw, 4.5rem);
+            margin: 0;
+            font-weight: 700;
         }
 
-        #message {
-            margin-top: 9vh;
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.2vw, 1.25rem);
+            color: var(--muted);
+            margin: 0;
         }
 
-        #message-heading {
-            text-align: center;
-            color: #4F506A;
-
-        }
-
-        #message .subtext {
-            font-size: 1em;
-        }
-
-        #nav {
-            position: fixed;
-            bottom: 3vh;
-            width: 100%;
+        .hero-actions {
             display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
             justify-content: center;
         }
 
-        #pills {
-            margin: 0 auto;
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
 
-        .pill {
-            display: inline-block;
-            background: #FFDFDF;
-            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.13), -3px -3px 4px rgba(255, 255, 255, 0.38);
-            border-radius: 25px;
-            padding: 10px;
-            margin: 7px;
-
+        .button-primary {
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 12px 24px rgba(216, 117, 137, 0.25);
         }
 
-        .pill-text {
-            font-size: 1em;
-            color: #4F506A;
-            font-weight: 400;
+        .button-ghost {
+            border-color: var(--border);
+            background: #fff;
+            color: var(--text);
         }
 
-        #footer-message {
-            position: fixed;
-            right: 1px;
-            bottom: 1px;
-            color: #DEC9C9;
+        .button:hover {
+            transform: translateY(-1px);
         }
 
-
-        @media only screen and (max-width: 1060px) {
-            #name {
-                font-size: 10vw;
-            }
+        .grid {
+            display: grid;
+            gap: 20px;
         }
 
-        @media only screen and (max-width: 632px) {
-            #name {
-                font-size: 15vw;
-            }
+        .info-grid {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            margin: 24px 0 40px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 22px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .card-title {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+        }
+
+        .card-text {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin: 0 0 12px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, rgba(216, 117, 137, 0.18), rgba(255, 255, 255, 0.6));
+            border-radius: var(--radius);
+            padding: 24px;
+            border: 1px solid rgba(216, 117, 137, 0.25);
+        }
+
+        .cta-title {
+            margin: 0 0 8px;
+            font-size: 1.25rem;
+        }
+
+        .cta-text {
+            margin: 0 0 16px;
+            color: var(--muted);
+        }
+
+        footer {
+            margin-top: 56px;
+            text-align: center;
+            color: rgba(109, 111, 134, 0.7);
+            font-size: 0.9rem;
         }
     </style>
 </head>
 
 <body>
 
-    <div id="main">
+    <div class="container">
+        <header class="hero">
+            <p class="eyebrow">Alameda, California</p>
+            <h1 class="hero-title">Leann's Nails</h1>
+            <p class="hero-subtitle">A neighborhood nail salon in the heart of Alameda.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="tel:5108644117">Call to book</a>
+                <a class="button button-ghost"
+                    href="https://www.google.com/maps/place/1612+Webster+St,+Alameda,+CA+94501/" target="_blank"
+                    rel="noopener">Get directions</a>
+            </div>
+        </header>
 
-        <h1 id="name">Leann's Nails</h1>
-        <h4 id="address" class="subtext"><a href="https://www.google.com/maps/place/1612+Webster+St,+Alameda,+CA+94501/"
-                target="_blank">1612 Webster Street, Alameda CA 94501</a></h4>
-        <h4 id="phone" class="subtext"><a href="tel:5108644117" target="_blank">510-864-4117</a></h4>
+        <section class="grid info-grid">
+            <div class="card">
+                <h2 class="card-title">Visit us</h2>
+                <p class="card-text">
+                    <a href="https://www.google.com/maps/place/1612+Webster+St,+Alameda,+CA+94501/" target="_blank"
+                        rel="noopener">1612 Webster Street, Alameda CA 94501</a>
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="card-title">Call us</h2>
+                <p class="card-text">
+                    <a href="tel:5108644117">510-864-4117</a>
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="card-title">Appointments</h2>
+                <p class="card-text">Appointments are required. Please call to reserve a time.</p>
+            </div>
+        </section>
 
-        <div id="message">
-            <h3 id="message-heading">We’re reopened for indoor service!</h3>
-            <h4 class="subtext">Our services require an appointment, so call now!</h4>
+        <section class="section cta">
+            <h2 class="cta-title">Gift cards</h2>
+            <p class="cta-text">Give a little self-care to someone you love.</p>
+            <a class="button button-primary" href="https://leanns.salon/gift/" id="giftcards">Buy gift cards</a>
+        </section>
 
-            <!--                         <h3 id="message-heading">We are temporarily closed due to COVID restrictions.</h3>
-            <h4 class="subtext">We plan to reopen on January 7th. Looking forward to seeing you all!</h4> -->
+        <section class="section">
+            <h2 class="section-title">Reviews</h2>
+            <p class="card-text">See what our clients are saying.</p>
+            <div class="hero-actions" style="justify-content: flex-start;">
+                <a class="button button-ghost" href="https://www.yelp.com/biz/leanns-nails-alameda" id="reviews"
+                    target="_blank" rel="noopener">Read on Yelp</a>
+            </div>
+        </section>
 
-        </div>
-
-    </div>
-
-
-
-
-    <div id="nav">
-        <div id="pills">
-            <!-- <div class="pill">
-            <span class="pill-text">About</span>
-        </div> -->
-
-<!--             <a href="https://leanns.salon/services/" id="services">
-                <div class="pill">
-                    <span class="pill-text">Services</span>
-                </div>
-            </a> -->
-
-            <a href="https://leanns.salon/gift/" id="giftcards">
-                <div class="pill">
-                    <span class="pill-text">Gift Cards</span>
-                </div>
-            </a>
-
-
-            <a href="https://www.yelp.com/biz/leanns-nails-alameda" id="reviews" target="_blank">
-                <div class="pill">
-                    <span class="pill-text">Reviews</span>
-                </div>
-            </a>
-        </div>
-
-
-    </div>
-    <div id="footer-message">
-        (website under construction)
+        <footer>
+            Thank you for supporting a local business.
+        </footer>
     </div>
 
 
     <script>
-        const tracker = {};
-        tracker.track = (name, props) => {
-            heap.track(name, props);
-            mixpanel.track(name, props);
-            pendo.track(name, props);
-		htevents.track(name, props);
-        }
+        const tracker = {
+            track(name, props) {
+                if (window.heap?.track) window.heap.track(name, props);
+                if (window.mixpanel?.track) window.mixpanel.track(name, props);
+                if (window.pendo?.track) window.pendo.track(name, props);
+                if (window.htevents?.track) window.htevents.track(name, props);
+            }
+        };
 
-        var servicesLink = document.querySelector('#services');
-        var giftCardLink = document.querySelector('#giftcards');
-        var yelpLink = document.querySelector('#reviews');
+        const giftCardLink = document.querySelector('#giftcards');
+        const yelpLink = document.querySelector('#reviews');
 
-        // servicesLink.addEventListener('click', () => {
-        //     tracker.track('Click Services');
-        // });
-
-        giftCardLink.addEventListener('click', () => {
+        giftCardLink?.addEventListener('click', () => {
             tracker.track('Click Gift Cards');
         });
 
-        yelpLink.addEventListener('click', () => {
+        yelpLink?.addEventListener('click', () => {
             tracker.track('Click Yelp');
         });
     </script>
